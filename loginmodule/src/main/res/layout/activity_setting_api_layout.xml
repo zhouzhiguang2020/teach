@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_49"
+        android:background="@drawable/head_task_bg"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:padding="@dimen/dp_5"
+            android:background="@drawable/back_color_select"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:src="@drawable/global_retur_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件设置"
+            android:textColor="@color/text_normal_color"
+            android:textSize="@dimen/dp_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/text_normal_color"
+            android:textSize="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/service_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:gravity="center_vertical|left"
+        android:padding="@dimen/dp_3"
+        android:background="@drawable/edit_background"
+        android:textColor="@color/text_normal_color"
+        android:textColorHint="@color/text_hint_color"
+        android:textCursorDrawable="@drawable/login_input_shape"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:id="@+id/define"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/define_bg"
+        android:text="确定"
+        android:layout_marginTop="@dimen/dp_60"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_14"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

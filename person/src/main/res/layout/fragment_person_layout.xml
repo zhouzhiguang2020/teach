@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line1">
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/commont_title_bar_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/student_management"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/top_background_white_select"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="@string/student_management"
+        android:textColor="@color/black13"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_layout" />
+
+    <FrameLayout
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_management">
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12" />
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/class_schedule"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/top_background_white_select"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="@string/class_schedule"
+        android:textColor="@color/black13"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+    <com.futureeducation.commonmodule.view.ExpandableLayout
+        android:id="@+id/setting_conditions_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:el_contentLayout="@layout/setting_content_layout"
+        app:el_headerLayout="@layout/setting_header_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class_schedule" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

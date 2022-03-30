@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">未来教室APP</string>
+    <string name="apply_hint_permission">权限申请</string>
+    <string name="requst_store_permissions">为了正常使用我们需要存储权限！</string>
+    <string name="login_role_errors" tools:ignore="ExtraTranslation">帐户登录（%s）角色类型有误！</string>
+    <string name="homework">作业</string>
+    <string name="learningcondition">学情</string>
+    <string name="person">我的</string>
+    <string name="assistant" tools:ignore="ExtraTranslation">助手</string>
+
+</resources>

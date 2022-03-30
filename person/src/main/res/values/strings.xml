@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="mine" tools:ignore="ExtraTranslation">我的</string>
+    <string name="student_management">学生管理</string>
+    <string name="class_schedule">课程表</string>
+    <string name="contact_us">联系我们</string>
+    <string name="check_updates">检查更新</string>
+    <string name="user_notice">用户需知</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="withdraw_account">退出账号</string>
+    <string name="class_text">班级</string>
+    <string name="lock_function_explain">该功能仅对班主任开发哦～</string>
+    <string name="reset_password">重置密码</string>
+    <string name="select_courser">班级选择</string>
+    <string name="reset_passwor">重置密码</string>
+    <string name="student_information">学生信息</string>
+    <string name="name_text">姓名：</string>
+    <string name="role">角色</string>
+    <string name="role_text">角色：</string>
+    <string name="gender_text">性别：</string>
+    <string name="account_number_text">账号：</string>
+    <string name="grade_text">年级：</string>
+    <string name="school_text">学校：</string>
+    <string name="password_management">密码管理</string>
+    <string name="system_password">系统密码</string>
+    <string name="please_enter_your_password">请输入密码</string>
+    <string name="set_password_hit">密码长度为8 - 20个字符，须由数字、字母、特殊字符完成！</string>
+    <string name="qq_text">QQ</string>
+    <string name="key_copy">一键复制</string>
+    <string name="phone_text">电话</string>
+    <string name="contact_us_explain">如果您在使用本产品过程中有任何问题及反馈建议，请联系我们！</string>
+    <string name="copy_success">复制成功</string>
+    <string name="user_agreement">用户须知</string>
+    <string name="log_out_msg">确定要退出帐号吗？</string>
+
+    <string name="lunch_break">午休</string>
+    <string-array name="schooltime_texts" tools:ignore="ExtraTranslation">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+    </string-array>
+
+
+    <!--老师上课时间段-->
+    <string-array name="teacher_class_time" tools:ignore="ExtraTranslation">
+        <item>08:30 - 09:15</item>
+        <item>09:25 - 10:10</item>
+        <item>10:20 - 11:05</item>
+        <item>11:15 - 12:00</item>
+        <item>12:00 - 14:00</item>
+        <item>15:05 - 15:50</item>
+        <item>16:00 - 16:45</item>
+        <item>16:55 - 17:40</item>
+        <item>17:50 - 18:35</item>
+    </string-array>
+</resources>

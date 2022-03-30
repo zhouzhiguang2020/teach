@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.future_education.assistant">
+
+    <application>
+        <activity
+            android:name=".activity.SelectStudentActivity"
+            android:exported="false"
+            android:label="补评选择学生"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.PlementaryCommentsActivity"
+            android:exported="false"
+            android:label="补评论"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.NewEvaluationActivity"
+            android:exported="false"
+            android:label="新建评价"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.EditEvaluationActivity"
+            android:exported="false"
+            android:label="编辑/修改评价"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.EvaluationIndicatorsActivity"
+            android:exported="false"
+            android:label="自定义评价指标"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.ClassroomAssessmentActivity"
+            android:exported="false"
+            android:label="课堂评价"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.LearningEvaluationActivity"
+            android:exported="false"
+            android:label="学习评价"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+    </application>
+
+</manifest>

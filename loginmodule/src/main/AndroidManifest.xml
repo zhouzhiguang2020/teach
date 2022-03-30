@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.future_education.teacher.loginmodule">
+
+    <uses-sdk
+        tools:ignore="MultipleUsesSdk"
+        tools:overrideLibrary="com.shuyu.gsyvideoplayer.lib,com.shuyu.gsyvideoplayer,tv.danmaku.ijk.media.exo2,com.google.android.exoplayer2,com.google.android.exoplayer2.ui,com.google.android.exoplayer2.ext.rtmp,com.google.android.exoplayer2.source.dash,com.google.android.exoplayer2.source.hls  ,com.google.android.exoplayer2.source.smoothstreaming,com.google.android.exoplayer2.core,com.shuyu.gsyvideoplayer.armv5   ,com.shuyu.gsyvideoplayer.armv7a,com.shuyu.gsyvideoplayer.armv64,com.shuyu.gsyvideoplayer.x86_64,com.shuyu.gsyvideoplayer.x86,com.shuyu.gsy.base,shuyu.com.androidvideocache" />
+
+    <queries>
+        <package android:name="com.tencent.mm" />
+    </queries>
+
+    <application>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="登录主界面"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Login"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.BindActivity"
+            android:label="绑定界面"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.SettingApiActivity"
+            android:label="设置页面"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.HistoryApiActivity"
+            android:label="设置历史"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation"
+            tools:ignore="LockedOrientationActivity" />
+
+
+    </application>
+
+</manifest>

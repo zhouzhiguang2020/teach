@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_100"
+    android:layout_marginLeft="@dimen/dp_15"
+    android:layout_marginTop="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_15"
+    android:background="@drawable/item_student_assessment_background_shape"
+    android:clickable="true"
+    tools:ignore="MissingDefaultResource">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/group_head_portrait"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:src="@drawable/ic_group_head_portrait"
+        app:layout_constraintBottom_toTopOf="@+id/group_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:includeFontPadding="false"
+        android:text="第一组"
+        android:textColor="@color/text_normal_color2"
+        android:textSize="@dimen/dp_13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/group_head_portrait"
+        app:layout_constraintRight_toRightOf="@+id/group_head_portrait"
+        app:layout_constraintTop_toBottomOf="@+id/group_head_portrait" />
+
+    <View
+        android:id="@+id/line1"
+        style="@style/vertical_line"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:background="@color/borderDeep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/group_head_portrait"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/remark_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:text="@string/remark_text"
+        android:textColor="@color/textGrayDeep_8"
+        android:textSize="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        app:layout_constraintLeft_toRightOf="@+id/line1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="课堂表现优异"
+        android:textColor="@color/black13"
+        android:textSize="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/remark_text"
+        app:layout_constraintLeft_toRightOf="@+id/remark_text"
+        app:layout_constraintTop_toTopOf="@+id/remark_text" />
+
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:text="@string/score_text"
+        android:textColor="@color/textGrayDeep_8"
+        android:textSize="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/remark"
+        app:layout_constraintLeft_toRightOf="@+id/remark"
+        app:layout_constraintTop_toTopOf="@+id/remark" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_12"
+        android:gravity="left"
+        android:text="6"
+        android:textColor="@color/black13"
+        android:textSize="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/score_text"
+        app:layout_constraintLeft_toRightOf="@+id/score_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/score_text" />
+
+    <TextView
+        android:id="@+id/group_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group_list_text"
+        android:textColor="@color/textGrayDeep_8"
+        android:textSize="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="@+id/remark_text"
+        app:layout_constraintTop_toBottomOf="@+id/remark_text" />
+
+    <TextView
+        android:id="@+id/group_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:includeFontPadding="false"
+        android:text="王一一、王二二、王三三 王思思、王无误，王柳柳"
+        android:textColor="@color/black13"
+        android:maxLines="2"
+        android:textSize="@dimen/dp_12"
+        android:gravity="left|top"
+        app:layout_constraintLeft_toRightOf="@+id/group_list_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dp_10"
+        app:layout_constraintBottom_toTopOf="@+id/evaluation_time_text"
+        app:layout_constraintTop_toTopOf="@+id/group_list_text" />
+
+    <TextView
+        android:id="@+id/evaluation_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="@string/evaluation_time_text"
+        android:textColor="@color/textGrayDeep_8"
+        android:textSize="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/group_list_text"
+        app:layout_constraintTop_toBottomOf="@+id/group_list" />
+    <TextView
+        android:id="@+id/evaluation_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="2021/11/24日10:15:38"
+        android:textColor="@color/black13"
+        android:textSize="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/evaluation_time_text"
+        app:layout_constraintLeft_toRightOf="@+id/evaluation_time_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/evaluation_time_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

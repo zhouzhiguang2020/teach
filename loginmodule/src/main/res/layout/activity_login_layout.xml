@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:viewBindingIgnore="true">
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/commont_title_bar_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/settingapi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_17"
+        android:paddingTop="@dimen/dp_35"
+        android:paddingRight="@dimen/dp_17"
+        android:paddingBottom="@dimen/dp_35"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_setting_up" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/horizontal_line"
+        android:layout_height="@dimen/dp_5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_layout" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/account_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_33"
+        android:layout_marginTop="@dimen/dp_65"
+        android:layout_marginRight="@dimen/dp_33"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_account"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_45"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="@string/input_account_hint"
+            android:inputType="text"
+            android:maxLength="24"
+            android:maxLines="1"
+            android:textColor="@color/text_normal_color2"
+            android:textColorHint="@color/text_hint_light_color"
+            android:textCursorDrawable="@drawable/input_cursor_drawable"
+            android:textSize="@dimen/dp_15"
+            app:layout_constraintBottom_toTopOf="@+id/line1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+
+            android:id="@id/line1"
+            style="@style/horizontal_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_account" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/password_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/input_default_background"
+        app:layout_constraintLeft_toLeftOf="@+id/account_layout"
+        app:layout_constraintRight_toRightOf="@+id/account_layout"
+        app:layout_constraintTop_toBottomOf="@+id/account_layout">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_password"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_45"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="@string/input_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="24"
+            android:maxLines="1"
+            android:textColor="@color/text_normal_color2"
+            android:textColorHint="@color/text_hint_light_color"
+            android:textCursorDrawable="@drawable/input_cursor_drawable"
+            android:textSize="@dimen/dp_15"
+            app:layout_constraintBottom_toTopOf="@+id/line2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/showPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_3"
+            android:src="@drawable/shown_password_drawable_select"
+            app:layout_constraintBottom_toBottomOf="@+id/input_password"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/input_password" />
+
+        <View
+            android:id="@id/line2"
+            style="@style/horizontal_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_password" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@+id/password_layout"
+        app:layout_constraintRight_toRightOf="@+id/password_layout"
+        app:layout_constraintTop_toBottomOf="@+id/password_layout">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/login_agreement_checkbox"
+            android:theme="@style/MyCheckBox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:includeFontPadding="false"
+            android:text="我已阅读并同意"
+            android:textColor="@color/textGrayDeep_6"
+            android:textSize="@dimen/dp_12" />
+
+        <TextView
+            android:id="@+id/tv_xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《用户须知》"
+            android:textColor="@color/button_normal_style1"
+            android:textSize="@dimen/dp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="和"
+            android:textColor="@color/textGrayDeep_6"
+            android:textSize="@dimen/dp_12" />
+
+        <TextView
+            android:id="@+id/tv_yinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《隐私政策》"
+            android:textColor="@color/button_normal_style1"
+            android:textSize="@dimen/dp_12" />
+    </LinearLayout>
+
+    <com.futureeducation.commonmodule.view.CommonShapeButton
+        android:id="@+id/account_login"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_33"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_33"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_15"
+        app:csb_activeEnable="true"
+        app:csb_cornerRadius="@dimen/dp_4"
+        app:csb_fillColor="@color/button_normal_style2"
+        app:csb_pressedColor="@color/blue_qq_normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_hint" />
+
+    <TextView
+        android:id="@+id/other_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_120"
+        android:includeFontPadding="false"
+        android:text="@string/other_login"
+        android:textColor="@color/textGrayDeep_6"
+        android:textSize="@dimen/dp_13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/WeChatLogin"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginTop="@dimen/dp_20"
+        android:clickable="true"
+        android:src="@drawable/ic_wechat_login_drawable_select"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

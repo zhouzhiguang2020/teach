@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/setting_content_color"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/learning_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/evaluation_content_background_select"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_learning_evaluation"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="@string/learning_evaluation"
+        android:textColor="@color/text_normal_color2"
+        android:textSize="@dimen/dp_14" />
+
+    <FrameLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_content_color">
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_12" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/classroom_assessment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/evaluation_content_background_select"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_classroom_assessment"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="@string/classroom_assessment"
+        android:textColor="@color/text_normal_color2"
+        android:textSize="@dimen/dp_14" />
+</LinearLayout>
+

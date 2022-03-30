@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.future_education.person">
+
+    <application>
+        <activity
+            android:name=".activity.ClassScheduleActivity"
+            android:exported="false"
+            android:label="课程表"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.PrivacyPolicyActivity"
+            android:exported="false"
+            android:label="隐私政策"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.UserAgreementActivity"
+            android:exported="false"
+            android:label="用户须知"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:exported="false"
+            android:label="联系我们"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:exported="false"
+            android:label="重置密码"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+        <activity
+            android:name=".activity.StudentManagementActivity"
+            android:exported="false"
+            android:label="学生管理"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FututeEducation" />
+    </application>
+
+</manifest>

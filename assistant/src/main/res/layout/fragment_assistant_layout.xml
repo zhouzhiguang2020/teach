@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/commont_title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.futureeducation.commonmodule.view.ExpandableLayout
+        android:id="@+id/evaluation_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        app:el_contentLayout="@layout/evaluation_list_content_layout"
+        app:el_headerLayout="@layout/evaluation_list_header_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/talk_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/assistant_item_background_select"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_talk"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="@string/talk_text"
+        android:textColor="@color/text_normal_color2"
+        android:textSize="@dimen/dp_14" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resource_administration"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/assistant_item_background_select"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_resource_administration"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="@string/resource_administration"
+        android:textColor="@color/text_normal_color2"
+        android:textSize="@dimen/dp_14" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/key_lock_screen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/assistant_item_background_select"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_key_lock_screen"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="@string/key_lock_screen"
+        android:textColor="@color/text_normal_color2"
+        android:textSize="@dimen/dp_14" />
+
+</LinearLayout>

@@ -1,0 +1,239 @@
+<resources>
+    <declare-styleable name="CommonShapeButton">
+        <!--shape模式-->
+        <attr name="csb_shapeMode" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="line" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+        <!--填充颜色-->
+        <attr name="csb_fillColor" format="color" />
+        <!--按压颜色-->
+        <attr name="csb_pressedColor" format="color" />
+        <!--描边颜色-->
+        <attr name="csb_strokeColor" format="color" />
+        <!--描边宽度-->
+        <attr name="csb_strokeWidth" format="dimension" />
+        <!--圆角大小-->
+        <attr name="csb_cornerRadius" format="dimension" />
+        <!--圆角位置-->
+        <attr name="csb_cornerPosition">
+            <flag name="topLeft" value="1" />
+            <flag name="topRight" value="2" />
+            <flag name="bottomRight" value="4" />
+            <flag name="bottomLeft" value="8" />
+        </attr>
+        <!--是否开启动效-->
+        <attr name="csb_activeEnable" format="boolean" />
+        <!--drawable位置-->
+        <attr name="csb_drawablePosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <!--渐变开始颜色-->
+        <attr name="csb_startColor" format="color" />
+        <!--渐变结束颜色-->
+        <attr name="csb_endColor" format="color" />
+        <!--渐变方向-->
+        <attr name="csb_orientation" format="enum">
+            <enum name="TOP_BOTTOM" value="0" />
+            <enum name="LEFT_RIGHT" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" format="dimension" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+    <!--密码输入框-->
+    <declare-styleable name="PasswordEditText">
+        <!--密码个数-->
+        <attr name="passwordNumber" format="integer" />
+        <!--密码原点的半径-->
+        <attr name="passwordRadius" format="dimension" />
+        <!--密码原点的颜色-->
+        <attr name="passwordColor" format="color" />
+        <!--分割线的颜色-->
+        <attr name="divisionLineColor" format="color" />
+        <!--分割线的大小  指宽度-->
+        <attr name="divisionLineSize" format="dimension" />
+        <!--背景边框的颜色-->
+        <attr name="bgColor" format="color" />
+        <!--背景边框的大小-->
+        <attr name="bgSize" format="dimension" />
+        <!--背景边框的圆角大小-->
+        <attr name="bgCorner" format="dimension" />
+
+    </declare-styleable>
+    <!--密码输入框-->
+    <declare-styleable name="vericationCodeInput">
+
+        <attr name="box" format="integer" />
+        <attr name="child_h_padding" format="dimension" />
+        <attr name="child_v_padding" format="dimension" />
+        <attr name="child_width" format="dimension" />
+        <attr name="child_height" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="box_bg_focus" format="reference" />
+        <attr name="box_bg_normal" format="reference" />
+        <attr name="inputType" format="string" />
+    </declare-styleable>
+
+    <!--验证码的属性-->
+    <declare-styleable name="VerCodeEditText">
+        <attr name="figures" format="integer" />
+        <attr name="verCodeMargin" format="dimension" />
+        <attr name="bottomLineSelectedColor" format="reference" />
+        <attr name="bottomLineNormalColor" format="reference" />
+        <attr name="bottomLineHeight" format="dimension" />
+        <attr name="selectedBackgroundColor" format="reference" />
+        <attr name="cursorDuration" format="integer" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="color_tick" format="color" />
+        <attr name="color_checked" format="color" />
+        <attr name="color_unchecked" format="color" />
+        <attr name="color_unchecked_stroke" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LikeQQCropView">
+        <!--遮罩颜色-->
+        <attr name="maskColor" format="color"></attr>
+        <attr name="borderColor" format="color"></attr>
+        <attr name="radius" format="dimension"></attr>
+        <attr name="maximum_Scale" format="float"></attr>
+        <attr name="doubleClickScale" format="float"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension" />
+        <attr name="sb_shadow_offset" format="reference|dimension" />
+        <attr name="sb_shadow_color" format="reference|color" />
+        <attr name="sb_uncheck_color" format="reference|color" />
+        <attr name="sb_checked_color" format="reference|color" />
+
+        <attr name="sb_border_width" format="reference|dimension" />
+        <attr name="sb_checkline_color" format="reference|color" />
+        <attr name="sb_checkline_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_color" format="reference|color" />
+        <attr name="sb_uncheckcircle_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension" />
+
+        <attr name="sb_checked" format="reference|boolean" />
+        <attr name="sb_shadow_effect" format="reference|boolean" />
+        <attr name="sb_effect_duration" format="reference|integer" />
+        <attr name="sb_button_color" format="reference|color" />
+        <attr name="sb_show_indicator" format="reference|boolean" />
+        <attr name="sb_background" format="reference|color" />
+        <attr name="sb_enable_effect" format="reference|boolean" />
+    </declare-styleable>
+
+    <style name="select_setmeal_dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowNoTitle">true</item><!--:是否显示title-->
+        <item name="android:backgroundDimEnabled">true</item><!--背景是否模糊-->
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent
+        </item> <!-- 设置window背景透明，也就是去边框 -->
+
+    </style>
+
+    <!--主界面下面的导航栏-->
+    <declare-styleable name="MainNavigateTabBar">
+        <attr name="navigateTabTextColor" format="color|reference" />
+        <attr name="navigateTabSelectedTextColor" format="color|reference" />
+        <attr name="containerId" format="integer|reference" />
+        <attr name="navigateTabTextSize" format="dimension|reference" />
+    </declare-styleable>
+
+    <!-- 自定义星星属性 -->
+    <declare-styleable name="star">
+       <!-- //星星数量-->
+        <attr name="starsNum" format="integer" />
+     <!--   //星星宽度-->
+        <attr name="starWidth" format="dimension" />
+    <!--    //星星高度-->
+        <attr name="starHeight" format="dimension" />
+      <!--  //星星间距-->
+        <attr name="starDistance" format="dimension" />
+       <!-- //星星背景-->
+        <attr name="starBackground" format="reference" />
+       <!-- //星星变化背景-->
+        <attr name="starDrawBackground" format="reference" />
+      <!--  //控件是否可以点击-->
+        <attr name="starClickable" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_headerLayout" format="reference"/>
+        <attr name="el_contentLayout" format="reference" />
+        <attr name="el_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CornerMark">
+        <!--支持的角标类型-->
+        <attr name="mark_type" format="enum">
+            <!--梯形-->
+            <enum name="TRAPEZOID" value="10"/>
+            <!--矩形-->
+            <enum name="RECTANGLE" value="20"/>
+            <enum name="BOOKMARK" value="30"/>
+        </attr>
+        <!--角标位置-->
+        <attr name="mark_location" format="enum">
+            <!--左上角-->
+            <enum name="LEFT_TOP" value="1"/>
+            <!--右上角-->
+            <enum name="RIGHT_TOP" value="2"/>
+            <!--左下角-->
+            <enum name="LEFT_BOTTOM" value="3"/>
+            <!--右下角-->
+            <enum name="RIGHT_BOTTOM" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CornerMark.Trapezoid">
+        <!--填充色-->
+        <attr name="trapezoid_background_color" format="color"/>
+        <!--长边-->
+        <attr name="long_side" format="dimension"/>
+        <!--短边-->
+        <attr name="short_side" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CornerMark.Rectangle">
+        <!--填充色-->
+        <attr name="rectangle_background_color" format="color"/>
+        <!--左上角圆角半径-->
+        <attr name="left_top_corner" format="dimension"/>
+        <!--右上角圆角半径-->
+        <attr name="right_top_corner" format="dimension"/>
+        <!--左下角圆角半径-->
+        <attr name="left_bottom_corner" format="dimension"/>
+        <!--右下角圆角半径-->
+        <attr name="right_bottom_corner" format="dimension"/>
+        <!--圆角半径,会被独立设定的圆角半径覆盖-->
+        <attr name="corner" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="CornerMark.BookMark">
+        <!--填充色-->
+        <attr name="bookmark_background_color" format="color"/>
+        <!--凸起顶点的角度-->
+        <attr name="angle" format="integer"/>
+        <!--横边长度-->
+        <attr name="horizontal_side" format="dimension"/>
+        <!--竖边长度-->
+        <attr name="vertical_side" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/classroom_interaction_shape"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_166"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:background="@drawable/classroom_interaction_shape">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/classroom_interaction_dialog_background_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_14"
+                app:layout_constraintBottom_toTopOf="@+id/line2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0_5"
+                android:layout_marginBottom="@dimen/dp_50"
+                android:background="#DEECDB"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="@dimen/dp_0_5"
+                android:layout_height="0dp"
+                android:background="#DEECDB"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+            <com.futureeducation.commonmodule.view.CommonShapeButton
+                android:id="@+id/confirm"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_15"
+                app:csb_activeEnable="true"
+                app:csb_cornerPosition="bottomLeft"
+                app:csb_cornerRadius="@dimen/dp_23"
+                app:csb_fillColor="@color/answer_information_back_color"
+                app:csb_pressedColor="@color/shadow_color2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/line3"
+                app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+            <com.futureeducation.commonmodule.view.CommonShapeButton
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_0"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_15"
+                app:csb_activeEnable="true"
+                app:csb_cornerPosition="bottomRight"
+                app:csb_cornerRadius="@dimen/dp_23"
+                app:csb_fillColor="@color/answer_information_back_color"
+                app:csb_pressedColor="@color/shadow_color2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/line3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_10"
+            android:background="@drawable/top_tips_background"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

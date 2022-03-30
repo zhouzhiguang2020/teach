@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <path>
+        <root-path
+            name="root_path"
+            path="." />
+    </path>
+    <paths>
+        <external-path
+            name="external_storage_root"
+            path="." />
+        <files-path
+            name="files-path"
+            path="." />
+        <external-path
+            name="crop_image"
+            path="" />
+
+    </paths>
+    <external-path
+        name="app_update_external"
+        path="/" />
+    <external-cache-path
+        name="app_update_cache"
+        path="/" />
+    <root-path
+        name="root-path"
+        path="" />
+</resources>

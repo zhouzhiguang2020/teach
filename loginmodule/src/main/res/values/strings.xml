@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="forget_password">忘记密码</string>
+    <string name="account_login">帐户登录</string>
+    <string name="login">登录</string>
+    <string name="input_password_hint">请输入密码</string>
+    <string name="input_account_hint">请输入教师帐号/手机号</string>
+    <string name="login_role_errors">帐户登录（%s）角色类型有误！</string>
+    <string name="login_failure">登录失败</string>
+    <string name="loging_overd">你的登录已经过期请重新登录</string>
+    <string name="login_mutual_exclusion">你的帐号已经在别的设备登录</string>
+    <string name="account_overdue">帐号已到期，无法登录</string>
+    <string name="other_login">其他登录方式</string>
+    <string name="future_classroom">未来教室</string>
+    <string name="login_agree_prompt">登录前请先阅读并同意相关协议</string>
+    <string name="rebinding">重新绑定</string>
+    <string name="previous_account_has_tied">当前账号已被绑定，请重新绑定</string>
+    <string name="bingsuccess" tools:ignore="ExtraTranslation">绑定成功！</string>
+</resources>

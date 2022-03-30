@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="version_name_color">#47340C</color>
+    <color name="top_back_pressd_color">#65CFAF</color>
+    <color name="top_submergence_color">#91DFC8</color>
+</resources>

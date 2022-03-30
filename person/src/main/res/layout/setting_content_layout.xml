@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/content_layout"
+    android:background="@color/setting_content_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/setting_content_background_select"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="@string/contact_us"
+        android:textColor="@color/black13"
+        android:textSize="@dimen/dp_14" />
+
+    <FrameLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_content_color">
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_12" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/check_updates"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/setting_content_background_select"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="@string/check_updates"
+        android:textColor="@color/black13"
+        android:textSize="@dimen/dp_14" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_content_color">
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_12" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/user_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/setting_content_background_select"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="@string/user_notice"
+        android:textColor="@color/black13"
+        android:textSize="@dimen/dp_14" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_content_color">
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_12"
+             />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/setting_content_background_select"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_right_arrows"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="@string/privacy_policy"
+        android:textColor="@color/black13"
+        android:textSize="@dimen/dp_14" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_content_color">
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_12" />
+    </FrameLayout>
+    <View
+        style="@style/horizontal_line"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/fragment_person_bg" />
+
+
+    <com.futureeducation.commonmodule.view.CommonShapeButton
+        android:id="@+id/withdraw_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center"
+        android:text="@string/withdraw_account"
+        android:textColor="@color/red_normal1"
+        android:textSize="@dimen/dp_14"
+        app:csb_activeEnable="true"
+        app:csb_fillColor="@color/white"
+        app:csb_pressedColor="@color/line2" />
+
+</LinearLayout>

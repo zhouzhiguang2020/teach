@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grace_dialog_shape"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dp_270"
+        android:layout_height="@dimen/dp_160"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="@string/apply_hint_permission"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_25"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:text="登录失败"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_15"
+            app:layout_constraintBottom_toBottomOf="@+id/line1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hint" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginBottom="@dimen/dp_48"
+            android:background="@color/verification_code_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.futureeducation.commonmodule.view.CommonShapeButton
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/textGrayLight"
+            android:textSize="@dimen/dp_16"
+            app:csb_activeEnable="true"
+            app:csb_cornerPosition="bottomLeft"
+            app:csb_cornerRadius="@dimen/dp_10"
+            app:csb_fillColor="@color/white"
+            app:csb_pressedColor="@color/line1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/line2"
+            app:layout_constraintTop_toTopOf="@+id/line1" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="0dp"
+            android:background="@color/verification_code_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <com.futureeducation.commonmodule.view.CommonShapeButton
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/main_bule"
+            android:textSize="@dimen/dp_16"
+            app:csb_activeEnable="true"
+            app:csb_cornerPosition="bottomRight"
+            app:csb_cornerRadius="@dimen/dp_10"
+            app:csb_fillColor="@color/white"
+            app:csb_pressedColor="@color/line1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/line2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/line1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

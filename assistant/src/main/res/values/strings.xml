@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="assistan" tools:ignore="ExtraTranslation">助手</string>
+    <string name="evaluation_list">评价列表</string>
+    <string name="learning_evaluation">学习评价</string>
+    <string name="classroom_assessment">课堂评价</string>
+    <string name="talk_text">Talk</string>
+    <string name="resource_administration">资源管理器</string>
+    <string name="key_lock_screen">一键锁屏</string>
+    <string name="all_the_class">全部班级</string>
+    <string name="evaluation_indicators">自定义评价指标</string>
+    <string name="plementary_comments">补评</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="student">学生</string>
+    <string name="group">小组</string>
+    <string name="remark_text">评语：</string>
+    <string name="score_text">得分：</string>
+    <string name="evaluation_time_text">评价时间：</string>
+    <string name="group_list_text">名单：</string>
+    <string name="select_courser">班级选择</string>
+    <string name="new_evaluation">新增评价</string>
+    <string name="all">全部</string>
+    <string name="praise">表扬</string>
+    <string name="amendment">修正</string>
+    <string name="edit_evaluation">编辑评价</string>
+    <string name="evaluation_name_text">评价名称：</string>
+    <string name="score_text1">分数：</string>
+    <string name="submit">提交</string>
+    <string name="scoring_instructions">请输入0-10的整数</string>
+    <string name="new_evaluation_text">新建评价</string>
+    <string name="select_student">选择学生</string>
+    <string name="check_all">全选</string>
+</resources>
